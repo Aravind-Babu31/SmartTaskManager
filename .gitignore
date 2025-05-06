@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite3
+.env
+.venv/
+.idea/
+.DS_Store
+*.log
+*.zip
+*.tar.gz
+*.h5
+*.pkl
+*.sav
