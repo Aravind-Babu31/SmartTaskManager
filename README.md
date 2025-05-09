@@ -1,9 +1,9 @@
-# 🤖 AI-Based Task Manager Agent: SmartTaskMate
+# AI-Based Task Manager Agent: SmartTaskMate
 
-You can easily organize your daily tasks with the help of SmartTaskMate, an AI-powered task manager agent. When given natural language input, such as "Buy groceries tomorrow morning," it automatically extracts the **task**, **day**, **time**, and **category** and stores them in a database in an organized manner.
+You can easily organize your daily tasks with the help of SmartTaskMate, an AI-powered task manager agent. When given natural language input, such as "Buy groceries tomorrow morning," it automatically extracts the task, day, time, and category and stores them in a database in an organized manner.
 
 
-With the help of **Google Gemini Pro**, **Streamlit**, and **SQLite**, this tool uses intelligent language understanding to make task management easier.
+With the help of Google Gemini Pro, Streamlit, and SQLite, this tool uses intelligent language understanding to make task management easier.
 
 ---
 
@@ -11,7 +11,9 @@ With the help of **Google Gemini Pro**, **Streamlit**, and **SQLite**, this tool
 
 Accepts task descriptions in natural language. Automatically extracts structured information, including `task`, `day`, `time`, and `category`  
 ✅ Infers category even when it isn't mentioned directly (work, personal, shopping, etc.)  
-✅ Tasks are stored in a tidy **SQLite database** ✅ The codebase is of production quality and has a modular structure. ✅ For high accuracy, **few-shot prompting** with Gemini is used.
+✅ Tasks are stored in a tidy **SQLite database** 
+✅ The codebase is of production quality and has a modular structure.
+✅ For high accuracy, **few-shot prompting** with Gemini is used.
 
 ---
 
@@ -25,16 +27,21 @@ It takes a lot of time and effort to manually enter structured task information.
 
 ```text
 +-----------------------+
-| Streamlit User Interface | (User types a task) |
+| Streamlit User Interface |   (User types a task) |
 +----------+------------+
            |
-           v +---------------------+
-| Gemini Task Parser || (extracts task information) |
+           v
++---------------------+
+| Gemini Task Parser |        |(extracts task information) |
 +----------+-------------+
            |
-           v +---------------------+
-| SQLite Database || (task, day, time, etc.) | +---------------------+
+           v
+ +---------------------+
+| SQLite Database ||           (task, day, time, etc.) |
++---------------------+
            |
-           v +---------------------+
-Visual Task List || (Shows everything) |+---------------------+
+           v
++---------------------+
+Visual Task List ||            (Shows everything) |
++---------------------+
 
