@@ -22,7 +22,19 @@ Accepts task descriptions in natural language. Automatically extracts structured
 It takes a lot of time and effort to manually enter structured task information. The majority of users favor using natural language when writing or speaking. This is resolved by SmartTaskMate, which lets users naturally describe tasks and then employs a generative AI agent to **understand and organize** them efficiently.
 
 ---
+Project Structure :
 
+SmartTaskMate/
+├── .env                         # Environment variables (Google API key)
+├── requirements.txt             # Python dependencies
+├── taskmanager.db               # SQLite database
+└── src/
+    ├── streamlit_app.py         # Streamlit user interface
+    ├── agents/
+    │   └── task_parser.py       # Gemini-based task extraction
+    └── utils/
+        └── db.py                # Database handling
+        
 ## Overview of the Architecture
 
 ```text
@@ -44,4 +56,6 @@ It takes a lot of time and effort to manually enter structured task information.
 +---------------------+
 Visual Task List ||            (Shows everything) |
 +---------------------+
+
+
 
